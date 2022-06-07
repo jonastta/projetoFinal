@@ -5,7 +5,7 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-class BDVinhosOpenHelper (context: Context?)
+class BDGarrafeiraOpenHelper (context: Context?)
     : SQLiteOpenHelper(context, NOME_BASE_DADOS, null, VERSAO_BASE_DADOS) {
 
     /* Called when the database is created for the first time. This is where the
@@ -45,7 +45,7 @@ class BDVinhosOpenHelper (context: Context?)
     }
 
     companion object {
-        const val NOME_BASE_DADOS = "vinhos.db"
+        const val NOME_BASE_DADOS = "garrafeira.db"
         const val VERSAO_BASE_DADOS = 1
     }
 }
